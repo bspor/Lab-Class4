@@ -18,7 +18,8 @@ public class MyCourse {
         this.prerequisites = prerequisites;
     }
     
-    //Convert course name to UPPERCASE
+    //Convert course name to UPPERCASE not going to be used
+    
     public String getCapitalizedCourseName() {
         return this.getCourseName().toUpperCase();
     }

@@ -8,11 +8,12 @@ import javax.swing.JOptionPane;
  * @author      your name goes here
  * @version     1.00
  */
-public class IntroToProgrammingCourse {
+public class IntroToProgrammingCourse implements MyCourses {
     private String courseName;
     private String courseNumber;
     private double credits;
-
+    private String prerequisites;
+    
     public IntroToProgrammingCourse(String courseName, String courseNumber) {
         this.setCourseName(courseName);
         this.setCourseNumber(courseNumber);
@@ -57,5 +58,11 @@ public class IntroToProgrammingCourse {
         this.courseName = courseName;
     }
 
-    
+    public String getPrerequisites() {
+        return prerequisites;
+    }
+
+    public void setPrerequisites(String prerequisites) {
+        this.prerequisites = prerequisites;
+    }
 }

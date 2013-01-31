@@ -18,7 +18,6 @@ public class IntroToProgrammingCourse extends MyCourse {
 
     public IntroToProgrammingCourse(String courseName, String courseNumber, double credits, String prerequisites) {
         super(courseName, courseNumber, credits, prerequisites);
-        //this.setCredits(credits);
     }
 
     public double getCredits() {
