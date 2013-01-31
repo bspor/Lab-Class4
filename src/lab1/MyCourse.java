@@ -60,5 +60,5 @@ public class MyCourse {
 
     public void setCourseNumber(String courseNumber) {
         this.courseNumber = courseNumber;
-    }
+    }    
 }

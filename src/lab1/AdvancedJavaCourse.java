@@ -1,27 +1,28 @@
 package lab1;
 
-import javax.swing.JOptionPane;
-
 /**
- * Describe responsibilities here.
+ * Set the prereqs and credits for this object
  *
  * @author      bspor
  * @version     1.00
  */
-public class AdvancedJavaCourse  {
+public class AdvancedJavaCourse  extends MyCourse {
     private String prerequisites = "Intro to Java";
     private double credits = 4;
 
-    public AdvancedJavaCourse() {
-        this.setPrerequisites(prerequisites);
-        this.setPrerequisites(prerequisites);
+    public AdvancedJavaCourse(String courseName, String courseNumber, double credits, String prerequisites) {
+        super(courseName, courseNumber, credits, prerequisites);
+        //this.setPrerequisites(prerequisites);
+
     }
 
+    @Override
     public String getPrerequisites() {
         return prerequisites;
     }
 
-    public void setPrerequisites(String prerequisites) {
+    @Override
+    public final void setPrerequisites(String prerequisites) {
         this.prerequisites = prerequisites;
     }
 
@@ -29,7 +30,13 @@ public class AdvancedJavaCourse  {
         return credits;
     }
 
+    @Override
     public void setCredits(double credits) {
         this.credits = credits;
+    }
+    
+    @Override
+    public String toString() {
+        return "MyCourse{" + "courseName=" + getCourseName() + ", courseNumber=" + getCourseNumber() + ", credits=" + getCredits() + ", prerequisites=" + getPrerequisites() + '}';
     }
 }
