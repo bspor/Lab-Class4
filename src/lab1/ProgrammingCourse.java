@@ -5,19 +5,19 @@ package lab1;
 
 import javax.swing.JOptionPane;
 
-public class MyCourse {
+public abstract class ProgrammingCourse {
 
     private String courseName;
     private String courseNumber;
     private double credits;
     private String prerequisites;
 
-    public MyCourse(String courseName, String courseNumber, double credits, String prerequisites) {
-        this.courseName = courseName;
-        this.courseNumber = courseNumber;
-        this.credits = credits;
-        this.prerequisites = prerequisites;
-    }
+//    public ProgrammingCourse(String courseName, String courseNumber, double credits, String prerequisites) {
+//        this.courseName = courseName;
+//        this.courseNumber = courseNumber;
+//        this.credits = credits;
+//        this.prerequisites = prerequisites;
+//    }
 
     //Convert course name to UPPERCASE not going to be used
     public String getCapitalizedCourseName() {

@@ -15,11 +15,11 @@ public class TestMyCode {
         //in the class. I used Liskov Substitution and it works because the input data is
         //the same. 
 
-        MyCourse course1 = new IntroToProgrammingCourse("Intro to Programming",
+        ProgrammingCourse course1 = new IntroToProgrammingCourse("Intro to Programming",
                 "111-31", 5, "None");
-        MyCourse course2 = new IntroJavaCourse("Intro to Java",
+        ProgrammingCourse course2 = new IntroJavaCourse("Intro to Java",
                 "111-32", 5, "None");
-        MyCourse course3 = new AdvancedJavaCourse("Advanced Java",
+        ProgrammingCourse course3 = new AdvancedJavaCourse("Advanced Java",
                 "111-33", 5, "None");
 
         System.out.println(course1);

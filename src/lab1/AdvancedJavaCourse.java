@@ -6,13 +6,16 @@ package lab1;
  * @author bspor
  * @version 1.00
  */
-public class AdvancedJavaCourse extends MyCourse {
+public class AdvancedJavaCourse extends ProgrammingCourse {
 
     private String prerequisites = "Intro to Java";
     private double credits = 4;
 
     public AdvancedJavaCourse(String courseName, String courseNumber, double credits, String prerequisites) {
-        super(courseName, courseNumber, credits, prerequisites);
+        this.setCourseName(courseName);
+        this.setCourseNumber(courseNumber);
+        this.prerequisites = prerequisites;
+        this.credits = credits;
     }
 
     @Override

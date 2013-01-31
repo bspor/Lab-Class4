@@ -8,9 +8,9 @@ package lab2;
  *
  * @author bspor
  */
-public interface MyCourses {
+public interface ProgrammingCourse {
 
-    String getCourseName();
+    public abstract String getCourseName();
 
     String getCourseNumber();
 

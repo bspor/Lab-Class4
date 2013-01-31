@@ -13,12 +13,15 @@ package lab1;
  * @author bspor
  * @version 1.00
  */
-public class IntroToProgrammingCourse extends MyCourse {
-
+public class IntroToProgrammingCourse extends ProgrammingCourse {
     private double credits = 3;
+    private String prerequisites = "None";
 
     public IntroToProgrammingCourse(String courseName, String courseNumber, double credits, String prerequisites) {
-        super(courseName, courseNumber, credits, prerequisites);
+        this.setCourseName(courseName);
+        this.setCourseNumber(courseNumber);
+        this.setPrerequisites(prerequisites);
+
     }
 
     public double getCredits() {
