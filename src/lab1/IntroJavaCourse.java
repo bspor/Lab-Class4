@@ -3,10 +3,11 @@ package lab1;
 /**
  * Set the prereqs and credits for this object
  *
- * @author      bspor
- * @version     1.00
+ * @author bspor
+ * @version 1.00
  */
 public class IntroJavaCourse extends MyCourse {
+
     private String prerequisites = "Intro to Programming";
     private double credits = 4;
 
@@ -23,6 +24,7 @@ public class IntroJavaCourse extends MyCourse {
     public final void setPrerequisites(String prerequisites) {
         this.prerequisites = prerequisites;
     }
+
     @Override
     public String toString() {
         return "MyCourse{" + "courseName=" + getCourseName() + ", courseNumber=" + getCourseNumber() + ", credits=" + getCredits() + ", prerequisites=" + getPrerequisites() + '}';

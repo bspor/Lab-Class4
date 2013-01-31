@@ -25,5 +25,4 @@ public interface MyCourses {
     void setCredits(double credits);
 
     void setPrerequisites(String prerequisites);
-    
 }

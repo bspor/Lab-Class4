@@ -3,10 +3,11 @@ package lab1;
 /**
  * Set the prereqs and credits for this object
  *
- * @author      bspor
- * @version     1.00
+ * @author bspor
+ * @version 1.00
  */
-public class AdvancedJavaCourse  extends MyCourse {
+public class AdvancedJavaCourse extends MyCourse {
+
     private String prerequisites = "Intro to Java";
     private double credits = 4;
 
@@ -32,7 +33,7 @@ public class AdvancedJavaCourse  extends MyCourse {
     public void setCredits(double credits) {
         this.credits = credits;
     }
-    
+
     @Override
     public String toString() {
         return "MyCourse{" + "courseName=" + getCourseName() + ", courseNumber=" + getCourseNumber() + ", credits=" + getCredits() + ", prerequisites=" + getPrerequisites() + '}';
