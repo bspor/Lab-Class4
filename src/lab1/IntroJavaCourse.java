@@ -3,11 +3,11 @@ package lab1;
 /**
  * Describe responsibilities here.
  *
- * @author      your name goes here
+ * @author      bspor
  * @version     1.00
  */
 public class IntroJavaCourse {
-    String courseName;
+    private String courseName;
     private String courseNumber;
     private double credits;
     private String prerequisites;
@@ -46,5 +46,4 @@ public class IntroJavaCourse {
         }
         this.setCredits(credits);
     }
-
 }

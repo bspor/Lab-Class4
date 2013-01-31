@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 /**
  * Describe responsibilities here.
  *
- * @author      your name goes here
+ * @author      bspor
  * @version     1.00
  */
 public class AdvancedJavaCourse {
@@ -61,5 +61,4 @@ public class AdvancedJavaCourse {
     public void setCourseNumber(String courseNumber) {
         this.courseNumber = courseNumber;
     }
-    
 }
