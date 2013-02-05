@@ -14,15 +14,43 @@ public class Escort extends Car implements Cars {
     
    
     public Escort(String color, int numWheels, String engineType) {
-        super(color, numWheels, engineType);
+        //I am going to say all escorts in this case will be red, with 4 wheels
+        //and V4 turbo engine
+        super("red", 4, "V4 turbo");
+    }    
+
+    @Override
+    public String getTurnDirection(String direction) {
+        return super.getTurnDirection(direction);
     }
 
-    public String getHorn() {
-        return horn;
+    @Override
+    public String getColor() {
+        return super.getColor();
     }
 
-    public void setHorn(String horn) {
-        this.horn = horn;
+    @Override
+    public void setColor(String color) {
+        super.setColor(color);
     }
-    
+
+    @Override
+    public int getNumWheels() {
+        return super.getNumWheels();
+    }
+
+    @Override
+    public void setNumWheels(int numWheels) {
+        super.setNumWheels(numWheels);
+    }
+
+    @Override
+    public String getEngineType() {
+        return super.getEngineType();
+    }
+
+    @Override
+    public void setEngineType(String engineType) {
+        super.setEngineType(engineType);
+    }
 }

@@ -15,9 +15,9 @@ public class Car extends Vehicle implements Cars {
     //Cars, but they will also have things such as a color, number of wheels,
     //and engine
     //Variables
-    String color;
-    int numWheels;
-    String engineType;
+    private String color;
+    private int numWheels;
+    private String engineType;
     
     //Constructor
     public Car(String color, int numWheels, String engineType) {
@@ -25,24 +25,34 @@ public class Car extends Vehicle implements Cars {
         this.numWheels = numWheels;
         this.engineType = engineType;
     }
-    
 
+
+        
+    
     //Each car may have its own way or rate of acceleration
     //so it needs to be redefined in each class
-    public double getAcceleration(double acceleration) {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public double getAcceleration() {
+        //There would be a complex algorith here to determine
+        //the acceleration of this car. I am going to hard code it to 
+        // 5. This would be in meters per second
+        return 5;
+        
     }
     
     //Each car may have its own way or rate of slowingdown
     //so it needs to be redefined in each class
-    public double getSlowDown(double slowDown) {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public double getSlowDown() {
+        //Same as acceleration
+        return 3;
     }
     
     //Each car may have its own way or rate of turning
     //so it needs to be redefined in each class
-    public String getTurnDirection(String direction) {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public String getTurnDirection() {
+        //There would be an algorithm to determine if the car was going to turn
+        //left or right. I will hard code it to do right hand turns only. It
+        //has a phobia.
+        return "Right";
     }
 
     public String getColor() {
@@ -67,5 +77,14 @@ public class Car extends Vehicle implements Cars {
 
     public void setEngineType(String engineType) {
         this.engineType = engineType;
+    }
+
+    @Override
+    public String horn() {
+        return "Honk";
+    }
+
+    public String getTurnDirection(String direction) {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 }
