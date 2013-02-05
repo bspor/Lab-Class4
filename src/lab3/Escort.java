@@ -8,6 +8,6 @@ package lab3;
  *
  * @author Brandon
  */
-public class Escort {
+public class Escort extends Car implements Cars {
     
 }
